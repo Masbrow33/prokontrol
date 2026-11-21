@@ -1,0 +1,16 @@
+# ==========================================================
+#  Blacklist.txt
+#
+#  Dibaca oleh setup.sh (baris ~100) untuk memblokir VPS:
+#      curl -s .../Blacklist.txt | grep -w $License_Key \
+#           | awk '{print $1}'
+#      lalu dibandingkan dengan IP server
+#
+#  FORMAT (penting):  <IP>  <LICENSE_KEY>
+#  IP harus di kolom PERTAMA, karena script mengambil $1.
+#
+#  Contoh (baris di bawah ini hanya contoh, hapus tanda # untuk memakai):
+#  203.0.113.50  815846231601f10fa8b3d66b445acb7293989cc09f421ecd5073b70c46dd780a
+#
+#  Satu entri per baris. Baris berawalan # diabaikan.
+# ==========================================================
